@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211026 15:48:15.869" rpa="false" schemaversion="2">
+<suite id="s1" name="Calculate" source="C:\Users\148107\Work\Robot_Example\calculation\Calculate.robot">
+<test id="s1-t1" name="Test_Case_1">
+<kw name="Sum" library="program">
+<var>${OUTPUT}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<msg timestamp="20211026 15:48:15.920" level="INFO">Sum of 5 and 5 = 10</msg>
+<msg timestamp="20211026 15:48:15.920" level="INFO">${OUTPUT} = 10</msg>
+<status status="PASS" starttime="20211026 15:48:15.920" endtime="20211026 15:48:15.920"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${OUTPUT}' != '10'</arg>
+<arg>FAIL</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211026 15:48:15.921" endtime="20211026 15:48:15.921"/>
+</kw>
+<tag>Test_Sum</tag>
+<status status="PASS" starttime="20211026 15:48:15.919" endtime="20211026 15:48:15.921"/>
+</test>
+<test id="s1-t2" name="Test_Case_2">
+<kw name="Mul" library="program">
+<var>${OUTPUT}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<msg timestamp="20211026 15:48:15.923" level="INFO">Multiply of 5 and 5 = 25</msg>
+<msg timestamp="20211026 15:48:15.924" level="INFO">${OUTPUT} = 25</msg>
+<status status="PASS" starttime="20211026 15:48:15.923" endtime="20211026 15:48:15.924"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${OUTPUT}' != '25'</arg>
+<arg>FAIL</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211026 15:48:15.924" endtime="20211026 15:48:15.924"/>
+</kw>
+<tag>Test_Mul</tag>
+<status status="PASS" starttime="20211026 15:48:15.923" endtime="20211026 15:48:15.925"/>
+</test>
+<doc>Test Example</doc>
+<status status="PASS" starttime="20211026 15:48:15.873" endtime="20211026 15:48:15.927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_Mul</stat>
+<stat pass="1" fail="0" skip="0">Test_Sum</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Calculate">Calculate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
