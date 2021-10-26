@@ -17,18 +17,3 @@
 |   | [Tags] | Test_Mul |
 |   | ${OUTPUT}= | mul | ${a} | ${b} |
 |   | Run Keyword If | '${OUTPUT}' != '25' | FAIL |
-
-
-
-
-# | *** Keyword *** |
-
-# | Cal1 |
-# |   | [Arguments] | ${arg} | ${arg1} |
-# |   | ${iRet} = | sum | ${arg} | ${arg1} |
-# |   | [Return] | ${iRet} |
-
-# | Cal2 |
-# |   | [Arguments] | ${arg} | ${arg1} |
-# |   | ${iRet} = | mul | ${arg} | ${arg1} |
-# |   | [Return] | ${iRet} |
